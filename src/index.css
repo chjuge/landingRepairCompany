@@ -1,5 +1,8 @@
-body {
+* {
   margin: 0;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +13,32 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.my-map-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.my-map-yandex-link {
+  color: #eee;
+  font-size:12px;
+  position:absolute;
+  top:0px;
+}
+
+.my-map-yandex-link-address {
+  color:#eee;
+  font-size:12px;
+  position:absolute;
+  top:14px;
+}
+
+.iframe-map {
+  position:relative;
+  display: block;
+  border-style:none;
+  margin: 0 auto;
+  width: 40vw;
+  height: 40vh;
 }

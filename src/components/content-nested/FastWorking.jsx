@@ -2,19 +2,23 @@ import { fastWorkingPros } from "../../constants/constants";
 import { Card, Col, Row } from 'antd';
 
 const FastWorking = () => (
-	<Row>
-		<Col span={5}>
-			{fastWorkingPros.map(({ key, header, icon, description }) => <Card key={key} title={
-				<span>
-					{icon}
-					<h4>{header}</h4>
-				</span>
-			}
-			>
-				<p>{description}</p>
-			</Card>)}
-		</Col>
-	</Row>
+	<Col span={24}>
+		<Row justify={"space-around"}>
+		  {fastWorkingPros.map(({ key, header, icon, description }) => 
+    	 (
+    	  <Col span={7}>
+    	    <Card key={key} title={
+		  			<div>
+  						{icon}
+  						<h4>{header}</h4>
+		  			</div>
+		   		}>
+		  		<p>{description}</p>
+		  	  </Card>
+    	  </Col>
+    	))}
+		</Row>
+	</Col>
 );
 
 export default FastWorking;

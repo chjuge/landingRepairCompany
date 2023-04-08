@@ -3,7 +3,7 @@ import { Card } from 'antd';
 const { Meta } = Card;
 
 const Tariff = ({ value, title, price, src }) => {
-	return <Card style={{ width: '30%' }}
+	return <Card 
 		cover={
 			<img
 				alt='example'
